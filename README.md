@@ -25,14 +25,17 @@ Follow these steps to clone and run the Laravel project locally for development.
     ```
 
 composer install
-Install JavaScript Dependencies (if needed)
 
 npm install
+
 npm run dev
+
 Copy Environment File
 
 cp .env.example .env
+
 Update .env File
+
 Open .env and update database credentials and app configuration:
 
 APP_NAME=LaravelApp
