@@ -11,32 +11,37 @@
 
 # 🧑‍💻 Laravel Project Setup Guide
 
-Follow these steps to clone and run the Laravel project locally for development.
+A clean and modern Laravel 11 boilerplate to kickstart your projects.  
+Follow the steps below to set it up locally for development.  
 
 ---
 
-## 🚀 Steps
+## 🛠️ Requirements
+Before you begin, make sure you have installed:
+- [PHP >= 8.2](https://www.php.net/)  
+- [Composer](https://getcomposer.org/)  
+- [MySQL](https://www.mysql.com/) or [MariaDB](https://mariadb.org/)  
+- [Node.js & NPM](https://nodejs.org/)  
+- [Git](https://git-scm.com/)  
+
+---
+
+## 📥 Installation & Setup
 
 1. **Clone the Repository**
-    ```bash
-    git clone https://github.com/mdamirkhandev/laravel-11-boilerplate
-    cd laravel-11-boilerplate
-    Install PHP Dependencies
-    ```
+   ```bash
+   git clone https://github.com/mdamirkhandev/laravel-11-boilerplate.git
+   cd laravel-11-boilerplate
+Install Dependencies
 
 composer install
-
 npm install
-
 npm run dev
-
 Copy Environment File
 
 cp .env.example .env
-
-Update .env File
-
-Open .env and update database credentials and app configuration:
+Configure .env File
+Open the .env file in your editor and update with your local settings:
 
 APP_NAME=LaravelApp
 APP_ENV=local
@@ -53,13 +58,10 @@ DB_PASSWORD=your_password
 Generate Application Key
 
 php artisan key:generate
-
 Run Database Migrations (with seeders if needed)
 
 php artisan migrate --seed
-
 Start Development Server
 
 php artisan serve
-
-develop something amazing
+Now visit 👉 http://127.0.0.1:8000
